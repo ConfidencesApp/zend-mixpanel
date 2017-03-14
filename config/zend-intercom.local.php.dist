@@ -1,0 +1,23 @@
+<?php
+/**
+ * Confidences ZendMixpanel Configuration
+ *
+ * If you have a ./config/autoload/ directory set up for your project, you can
+ * drop this config file in it, remove the .dist extension add your configuration details.
+ */
+$settings = array(
+
+    /**
+     * Your Mixpanel Credentials
+     * Consumer : 'socket' or 'curl'
+     */
+	'project_token' => null,
+	'consumer' => 'socket'
+);
+
+/**
+ * You do not need to edit below this line
+ */
+return array(
+    'zend-mixpanel' => $settings,
+);
