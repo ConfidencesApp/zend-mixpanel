@@ -5,7 +5,7 @@
  * If you have a ./config/autoload/ directory set up for your project, you can
  * drop this config file in it, remove the .dist extension add your configuration details.
  */
-$settings = array(
+$settings = [
 
     /**
      * Your Mixpanel Credentials
@@ -18,11 +18,11 @@ $settings = array(
     'options' => [
     	'consumer' => 'socket'
     ]
-);
+];
 
 /**
  * You do not need to edit below this line
  */
-return array(
+return [
     'zend-mixpanel' => $settings,
-);
+];
