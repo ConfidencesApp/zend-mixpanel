@@ -4,24 +4,23 @@
  *
  * This source file is part of the Confidences ZendMixpanel package
  *
- * @package    Confidences\ZendMixpanel\Factory
+ * @package    Confidences\ZendMixpanel\Options
  * @license    Apache 2 {@link /LICENSE}
  * @copyright  Copyright (c) 2017, Confidences
  */
-namespace Confidences\ZendMixpanel\Factory;
+namespace Confidences\ZendMixpanel\Options;
 
-use Confidences\ZendMixpanel\Controller\Plugin\Mixpanel as MixpanelControllerPlugin;
-use Zend\ServiceManager\Factory\FactoryInterface;
 use Interop\Container\ContainerInterface;
+use Zend\ServiceManager\Factory\FactoryInterface;
 
-class MixpanelControllerPluginFactory implements FactoryInterface
+class ModuleOptionsFactory implements FactoryInterface
 {
     /**
      * {@inheritDoc}
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $service = $container->get('mixpanel');
-        return new MixpanelControllerPlugin($service);
+        $config = $container->get('Config');
+        return new $requestedName(isset($config['zend-mixpanel']) ? $config['zend-mixpanel'] : []);
     }
 }

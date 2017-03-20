@@ -9,10 +9,15 @@ $settings = array(
 
     /**
      * Your Mixpanel Credentials
-     * Consumer : 'socket' or 'curl'
      */
 	'project_token' => null,
-	'consumer' => 'socket'
+	/**
+     * Your Mixpanel Options
+     * Consumer : 'socket' or 'curl'
+     */
+    'options' => [
+    	'consumer' => 'socket'
+    ]
 );
 
 /**

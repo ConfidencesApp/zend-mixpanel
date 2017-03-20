@@ -1,20 +1,25 @@
 <?php
 use Confidences\ZendMixpanel\Factory\MixpanelServiceFactory;
 use Confidences\ZendMixpanel\Factory\MixpanelControllerPluginFactory;
+use Confidences\ZendMixpanel\Options\ModuleOptions;
+use Confidences\ZendMixpanel\Options\ModuleOptionsfactory;
 
-return array(
-	'zend-mixpanel' => array(
+return [
+	'zend-mixpanel' => [
 		'project_token' => null,
-		'consumer' => 'socket'
-	),
-	'service_manager' => array(
-		'factories' => array(
-			'mixpanel' => MixpanelServiceFactory::class
-		)
-	),
-    'controller_plugins' => array(
-        'factories' => array(
+        'options' => [
+        	'consumer' => 'socket'
+        ]
+	],
+	'service_manager' => [
+		'factories' => [
+			'mixpanel' => MixpanelServiceFactory::class,
+            ModuleOptions::class => ModuleOptionsfactory::class
+		]
+	],
+    'controller_plugins' => [
+        'factories' => [
             'mixpanel' => MixpanelControllerPluginFactory::class,
-        ),
-    ),
-);
+        ]
+    ]
+];
