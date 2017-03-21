@@ -4,7 +4,7 @@
  *
  * This source file is part of the Confidences ZendMixpanel package
  *
- * @package    Confidences\ZendMixpanel\Controller\Plugin\Mixpanel
+ * @package    Confidences\ZendMixpanel
  * @license    Apache 2 {@link /LICENSE}
  * @copyright  Copyright (c) 2017, Confidences
  */

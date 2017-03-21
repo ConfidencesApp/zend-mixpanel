@@ -1,7 +1,9 @@
 <?php
 return array(
-    'zend-mixpanel' => array(
-        'key' => 'KeyTest',
-        'consumer' => 'socket',
-    ),
+    'zend-mixpanel' => [
+        'project_token' => null,
+        'options' => [
+            'consumer' => 'socket'
+        ]
+    ]
 );

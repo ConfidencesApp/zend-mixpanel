@@ -19,9 +19,8 @@ class Module implements
     AutoloaderProviderInterface,
     ConfigProviderInterface
 {
-    
-    /* (non-PHPdoc)
-     * @see \Zend\ModuleManager\Feature\AutoloaderProviderInterface::getAutoloaderConfig()
+    /**
+     * {@inheritDoc}
      */
     public function getAutoloaderConfig()
     {
@@ -34,8 +33,8 @@ class Module implements
         );
     }
 
-    /* (non-PHPdoc)
-     * @see \Zend\ModuleManager\Feature\ConfigProviderInterface::getConfig()
+    /**
+     * {@inheritDoc}
      */
     public function getConfig()
     {

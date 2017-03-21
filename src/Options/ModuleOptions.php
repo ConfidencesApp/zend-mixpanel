@@ -4,7 +4,7 @@
  *
  * This source file is part of the Confidences ZendMixpanel package
  *
- * @package    Confidences\ZendMixpanel\Options
+ * @package    Confidences\ZendMixpanel
  * @license    Apache 2 {@link /LICENSE}
  * @copyright  Copyright (c) 2017, Confidences
  */
@@ -31,7 +31,7 @@ class ModuleOptions extends AbstractOptions
      */
     protected $options = [];
     
- 	/**
+    /**
      * @return string $projectToken
      */
     public function getProjectToken()
@@ -39,7 +39,7 @@ class ModuleOptions extends AbstractOptions
         return $this->projectToken;
     }
 
- 	/**
+    /**
      * @param string $projectToken
      * @return self
      */
@@ -49,7 +49,7 @@ class ModuleOptions extends AbstractOptions
         return $this;
     }
 
- 	/**
+    /**
      * @return array $options
      */
     public function getOptions()
@@ -57,7 +57,7 @@ class ModuleOptions extends AbstractOptions
         return $this->options;
     }
 
- 	/**
+    /**
      * @param array $options
      * @return self
      */

@@ -1,8 +1,8 @@
 <?php
 use Confidences\ZendMixpanel\Factory\MixpanelServiceFactory;
 use Confidences\ZendMixpanel\Factory\MixpanelControllerPluginFactory;
+use Confidences\ZendMixpanel\Factory\ModuleOptionsFactory;
 use Confidences\ZendMixpanel\Options\ModuleOptions;
-use Confidences\ZendMixpanel\Options\ModuleOptionsfactory;
 
 return [
 	'zend-mixpanel' => [
@@ -14,7 +14,7 @@ return [
 	'service_manager' => [
 		'factories' => [
 			'mixpanel' => MixpanelServiceFactory::class,
-            ModuleOptions::class => ModuleOptionsfactory::class
+            ModuleOptions::class => ModuleOptionsFactory::class
 		]
 	],
     'controller_plugins' => [

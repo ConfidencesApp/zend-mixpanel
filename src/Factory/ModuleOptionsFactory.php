@@ -4,14 +4,14 @@
  *
  * This source file is part of the Confidences ZendMixpanel package
  *
- * @package    Confidences\ZendMixpanel\Options
+ * @package    Confidences\ZendMixpanel
  * @license    Apache 2 {@link /LICENSE}
  * @copyright  Copyright (c) 2017, Confidences
  */
-namespace Confidences\ZendMixpanel\Options;
+namespace Confidences\ZendMixpanel\Factory;
 
-use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
+use Interop\Container\ContainerInterface;
 
 class ModuleOptionsFactory implements FactoryInterface
 {
